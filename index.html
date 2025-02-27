@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Zimulation</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Police Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- En-tête -->
+    <header class="header">
+        <h1>Zimulation</h1>
+        <p>Un projet de simulation aquatique évolutive en Rust</p>
+    </header>
+
+    <!-- Barre de navigation -->
+    <nav class="tabs">
+        <button class="tab-button active" data-tab="presentation">Présentation</button>
+        <button class="tab-button" data-tab="historique">Historique</button>
+        <button class="tab-button" data-tab="membres">Membres</button>
+        <button class="tab-button" data-tab="problemes">Problèmes</button>
+        <button class="tab-button" data-tab="solutions">Solutions</button>
+        <button class="tab-button" data-tab="liens">Liens utiles</button>
+        <button class="tab-button" data-tab="telechargements">Téléchargements</button>
+    </nav>
+
+    <!-- Contenu des onglets -->
+    <div class="tab-content active" id="presentation">
+        <section class="section">
+            <h2>Présentation du projet</h2>
+            <p>
+                Zimulation est un projet développé en Rust qui vise à simuler un environnement aquatique avec des créatures évolutives.<br>
+                Découvrez les étapes clés du développement, les défis rencontrés et les solutions apportées.
+            </p>
+        </section>
+    </div>
+
+    <div class="tab-content" id="historique">
+        <section class="section">
+            <h2>Historique du projet</h2>
+            <p>
+                Voici les étapes clés du développement de Zimulation :
+            </p>
+            <div class="card">
+                <h3>Création des créatures</h3>
+                <p>
+                    Les créatures sont composées de nœuds (articulations) et de muscles pour le mouvement.
+                </p>
+                <img src="assets/images/Node.png" alt="Création des créatures" class="card-image">
+                <img src="assets/images/Muscle.png" alt="Création des créatures" class="card-image">
+            </div>
+            <div class="card">
+                <h3>Représentation d'une créature</h3>
+                <p>
+                    Voici une représentation visuelle d'une créature.
+                </p>
+                <img src="assets/images/Creature.png" alt="Représentation d'une créature" class="card-image">
+            </div>
+            <div class="card">
+                <h3>Ajout de l'UI du menu</h3>
+                <p>
+                    Une interface utilisateur intuitive a été ajoutée pour le menu principal.
+                </p>
+                <img src="assets/images/Menu.png" alt="UI du menu" class="card-image">
+            </div>
+            <div class="card">
+                <h3>Ajout de boutons (retour, replay, pause)</h3>
+                <p>
+                    Des boutons ont été ajoutés pour améliorer l'expérience utilisateur.
+                </p>
+                <img src="assets/images/Button.png" alt="Boutons retour, replay, pause" class="card-image">
+            </div>
+        </section>
+    </div>
+
+    <div class="tab-content" id="membres">
+        <section class="section">
+            <h2>Membres de l'équipe</h2>
+            <p>
+                Notre équipe est composée de quatre membres passionnés, chacun apportant ses compétences et sa motivation pour faire de Zimulation un projet réussi. Voici une présentation détaillée de chaque membre :
+            </p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Etienne</h3>
+                    <p>
+                        Je m'appelle Etienne. Cela fait quelques années que je suis intéressé par l'informatique, notamment grâce à ma spécialité NSI au lycée.<br>
+                        Je suis particulièrement attiré par la résolution de problèmes et la cybersécurité. Ce que je préfère à Epita, ce sont les projets de groupe, surtout en programmation.<br>
+                        J'adore travailler en équipe, même si cela peut parfois poser des défis. C'est lors de ces projets que j'apprends le plus et que je peux corriger mes défauts.<br>
+                        Ce projet me passionne car nous avons eu la liberté de choisir son thème. Bien que la programmation en Rust soit un défi en raison de sa documentation limitée et de sa syntaxe complexe, mes deux années à Epita m'ont préparé à surmonter ces obstacles.<br>
+                        Je suis très motivé à donner le meilleur de moi-même pour ce projet.
+                    </p>
+                </div>
+                <div class="team-member">
+                    <h3>Marius</h3>
+                    <p>
+                        L’informatique était un domaine nouveau pour moi avant d'arriver en première, où j'ai choisi l'option Sciences de l'Ingénieur pour explorer cette matière.<br>
+                        Après avoir réalisé des travaux pratiques passionnants en binôme, j'ai décidé de me lancer dans une école combinant ingénierie et informatique.<br>
+                        Je trouve l'idée de simuler un environnement génétique, particulièrement aquatique, très pertinente. Étudier la sélection naturelle et les décisions des espèces face à des risques élevés est fascinant.<br>
+                        Bien que la réalisation d'un monde évolutif soit un défi, je compte mettre à profit mes expériences récentes, comme l'IA du S3 ou le jeu vidéo du S1/S2.<br>
+                        Travailler avec ce groupe est motivant, car je connais déjà certains membres et je suis prêt à persévérer face aux obstacles.
+                    </p>
+                </div>
+                <div class="team-member">
+                    <h3>Pierre</h3>
+                    <p>
+                        Je m'appelle Pierre Nouet. Passionné de jeux vidéo depuis toujours, j'ai toujours été fasciné par leur création. J'adore résoudre des problèmes, ce que l'informatique propose constamment.<br>
+                        Bien que je ne sois pas un expert en IA, mon intérêt pour ce domaine a grandi au fil de mes études, notamment grâce au projet de S3.<br>
+                        Ce projet combine mes centres d'intérêt : la biologie, l'informatique et la gestion d'une interface graphique comme dans un jeu. C'est une source de motivation immense pour moi.
+                    </p>
+                </div>
+                <div class="team-member">
+                    <h3>Victor</h3>
+                    <p>
+                        Je suis un sportif qui aime se fixer des objectifs ambitieux. Mes premières expériences en programmation ont été avec Arduino et des petits robots, avant de créer un jeu vidéo sur Unity pendant un stage au lycée.<br>
+                        J'ai toujours aimé créer et optimiser des choses, ce qui m'a naturellement conduit vers la création de jeux vidéo et de simulations. Ce projet est pour moi une opportunité de combiner défis techniques et créativité.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="tab-content" id="problemes">
+        <section class="section">
+            <h2>Problèmes rencontrés</h2>
+            <p>
+                Voici une liste des principaux défis techniques et organisationnels que nous avons rencontrés lors du développement de Zimulation :
+            </p>
+            <div class="card">
+                <h3>Prise en main de Bevy</h3>
+                <p>
+                    Tout passe par le code, rien n'est graphique contrairement à Unity. Le temps d'adaptation a été long.<br>
+                    De plus, Bevy évolue énormément, et de nombreuses sources d'informations ne sont plus à jour.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Rust est un langage ECS</h3>
+                <p>
+                    Contrairement à C#, Rust utilise un modèle ECS (Entity-Component-System), ce qui a nécessité une phase d'adaptation.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Physique et collisions</h3>
+                <p>
+                    Nous avons rencontré des difficultés avec les crates de physique comme Rapier2d et les colliders rectangles.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Interface utilisateur</h3>
+                <p>
+                    Bevy ne dispose pas d’un système de layout aussi intuitif que d’autres moteurs de jeu comme Unity.<br>
+                    Nous avons tenté d'utiliser la crate <code>NodeBundle</code>, mais cela a nécessité beaucoup de temps pour obtenir un résultat satisfaisant.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Débogage</h3>
+                <p>
+                    Beaucoup de temps a été investi dans le débogage, notamment en raison de la complexité du langage Rust et de l'architecture ECS.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Modélisation de l'eau</h3>
+                <p>
+                    Nous avons manqué de ressources sur des systèmes simplifiés de modélisation de l'eau, ce qui a rendu cette partie du projet particulièrement difficile.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="tab-content" id="solutions">
+        <section class="section">
+            <h2>Solutions envisagées</h2>
+            <p>
+                Voici les solutions que nous avons mises en place pour résoudre les problèmes rencontrés :
+            </p>
+            <div class="card">
+                <h3>Calculs des collisions à la main</h3>
+                <p>
+                    Au lieu d'utiliser une crate comme Rapier2d, nous avons implémenté nos propres calculs de collisions pour mieux contrôler la physique.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Mettre une marge pour placer les boutons</h3>
+                <p>
+                    Pour améliorer l'interface utilisateur, nous avons ajouté des marges pour mieux positionner les boutons et les éléments de l'UI.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Passer à une version antérieure pour les sprites</h3>
+                <p>
+                    Nous avons utilisé une version antérieure de Bevy pour les sprites afin de contourner les problèmes de compatibilité.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Inspiration de projets existants</h3>
+                <p>
+                    Nous nous sommes inspirés de "ACTUALLY Improved Evolution Simulator" pour modéliser les créatures de manière plus réaliste.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Ajout de frottement</h3>
+                <p>
+                    Un système de frottement a été ajouté pour réguler les mouvements des créatures.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="tab-content" id="liens">
+        <section class="section">
+            <h2>Liens utiles</h2>
+            <div class="links-grid">
+                <a href="https://github.com/etienneglr/Zimulation" target="_blank" class="link-card">
+                    Dépôt GitHub
+                </a>
+                <a href="https://rust-lang.org" target="_blank" class="link-card">
+                    Site officiel de Rust
+                </a>
+                <a href="https://bevyengine.org" target="_blank" class="link-card">
+                    Site officiel de Bevy
+                </a>
+                <a href="https://www.baeldung.com/cs/circle-line-segment-collision-detection#:~:text=Mathematical%20Idea&text=on%20the%20line-,.,Otherwise%2C%20it%20doesn%27t" target="_blank" class="link-card">
+                    Site de Maths
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="tab-content" id="telechargements">
+        <section class="section">
+            <h2>Téléchargements</h2>
+            <div class="download-buttons">
+                <a href="https://github.com/etienneglr/Zimulation/releases/download/v0.1/zimulation" download="zimulation" class="download-button">
+                    Télécharger Zimulation (version complète)
+                </a>
+                <a href="https://github.com/etienneglr/Zimulation/releases/download/v0.1/zimulation_lite" download="zimulation_lite" class="download-button">
+                    Télécharger Zimulation (version lite)
+                </a>
+                <a href="https://github.com/etienneglr/Zimulation/releases/download/v0.1/rapport.pdf" download="rapport.pdf" class="download-button">
+                    Télécharger le rapport (PDF)
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script JavaScript pour gérer les onglets -->
+    <script src="scripts.js"></script>
+</body>
+</html>

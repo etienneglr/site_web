@@ -1,0 +1,178 @@
+:root {
+    --primary-color: #007BFF; /* Bleu vif */
+    --secondary-color: #00C853; /* Vert vif */
+    --background-color: #1e1e2f; /* Fond sombre */
+    --text-color: #ffffff; /* Texte clair */
+    --card-background: #2a2a40; /* Fond des cartes */
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ombre des cartes */
+    --border-radius: 10px; /* Bordures arrondies */
+    --transition-speed: 0.3s; /* Vitesse des transitions */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* En-tête */
+.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0;
+}
+
+/* Barre de navigation */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: var(--card-background);
+    padding: 1rem;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 2rem;
+}
+
+.tab-button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.tab-button.active, .tab-button:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Contenu des onglets */
+.tab-content {
+    display: none;
+    padding: 2rem;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Sections */
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Cartes */
+.card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Images dans les cartes */
+.card-image {
+    height: 200px; /* Hauteur fixe */
+    width: auto; /* Largeur ajustée automatiquement pour conserver les proportions */
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+}
+
+/* Grille pour les membres et les liens */
+.team-grid, .links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 1.5rem;
+}
+
+.team-member, .link-card {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.team-member:hover, .link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.link-card {
+    text-decoration: none;
+    color: var(--primary-color);
+    display: block;
+}
+
+.link-card h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* Boutons de téléchargement */
+.download-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.download-button {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    text-align: center;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.download-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
